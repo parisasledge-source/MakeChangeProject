@@ -17,6 +17,7 @@ public class CashRegister {
 		 
 		Scanner sc = new Scanner(System.in);
 		double price = 0.0;
+		double amount = 0.0;
 		
 //		The user is prompted asking for the price of the item.
 		System.out.println("How much is the item? ");
@@ -26,12 +27,19 @@ public class CashRegister {
 		
 		
 //		The user is then prompted asking how much money was tendered by the customer.
-		
+		System.out.println("How much money was tendered by the customer? ");
+		amount = sc.nextDouble();
 		
 		
 		
 //		Display an appropriate message if the customer provided too little money or the exact amount.
-		
+		if(amount == price) {
+			System.out.println("Thanks! Have a nice day!");
+		}
+		else if(amount < price) {
+			System.out.println("Too short! The price is more than what you paid.");
+			
+		}
 		
 		
 		
