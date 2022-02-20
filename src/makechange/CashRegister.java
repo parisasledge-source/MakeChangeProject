@@ -42,10 +42,15 @@ public class CashRegister {
 			double change = amountPaid - price;
 			System.out.println("The money that should be given to the customer is $" + change);
 			
+//			Call the method to calculate the change in the form of bills and coins .
+			calculateChange(amountPaid, price);
 		}
 		
 		
-		
+	}
+
+	public static void calculateChange(double amountPaid, double price) {
+	
 	}
 
 }
