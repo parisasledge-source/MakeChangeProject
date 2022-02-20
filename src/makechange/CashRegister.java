@@ -23,29 +23,27 @@ public class CashRegister {
 		System.out.println("How much is the item? ");
 		price = sc.nextDouble();
 		
-		
-		
-		
 //		The user is then prompted asking how much money was tendered by the customer.
 		System.out.println("How much money was tendered by the customer? ");
 		amount = sc.nextDouble();
 		
-		
-		
-//		Display an appropriate message if the customer provided too little money or the exact amount.
+//		Display an appropriate message if the customer provided the exact amount.
 		if(amount == price) {
 			System.out.println("Thanks! Have a nice day!");
 		}
+//		Display an appropriate message if the customer provided too little money.
 		else if(amount < price) {
-			System.out.println("Too short! The price is more than what you paid.");
+			System.out.println("You provided too little money. The price is more than what you paid.");	
+		}
+		
+//		If the amount tendered is more than the cost of the item, 
+//		display the number of bills and coins that should be given to the customer.
+		else {
 			
 		}
 		
 		
 		
-		
-//		If the amount tendered is more than the cost of the item, 
-//		display the number of bills and coins that should be given to the customer.
 	}
 
 }
